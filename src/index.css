@@ -1,0 +1,86 @@
+.nav-link{
+  cursor: pointer;
+}
+/* Genaral */
+.wait{
+  background-color: rgba(128, 128, 128, 0.144);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orangered;
+}
+.pa{
+  padding-top: 5rem;
+}
+/* Navbar start */
+.navbar{
+  transition: all 1s;
+}
+.navbar .active{
+  font-weight: 700;
+}
+.navbar .nav-link{
+  font-weight: 500;
+}
+/* Navbar end */
+/* Home Start */
+.layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(75, 67, 67, 0.527);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: all .3s ease-in-out;
+}
+.item{
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: black;
+}
+.item:hover .layer{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Home End */
+.about{
+  background-color: tomato;
+  height: 100vh;
+  color: white;
+}
+.news{
+  background-color: indigo;
+  /* height: 100vh; */
+  /* color: white; */
+  padding: 5rem 0;
+}
+.not-found{
+  background-color: goldenrod;
+  height: 100vh;
+  color: black;
+}
+.nested-nav{
+  margin-top: 6rem;
+}
+.card-body{
+  min-height: 300px;
+}
+.parent{
+  height: 100vh;
+  background-color: indianred;
+}
+.register{
+  background-color: rgba(128, 128, 128, 0.575);
+  height: 100vh;
+}
